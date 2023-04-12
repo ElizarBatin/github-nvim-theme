@@ -25,7 +25,7 @@ M.setup = function()
     Cursor = { fg = c.bg, bg = c.fg }, -- character under the cursor
     lCursor = { link = 'Cursor' }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM = { link = 'Cursor' }, -- like Cursor, but used when in IME mode |CursorIM|
-    CursorLine = { bg = c.bg_highlight }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLine = { bg = "#fafafa" }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     CursorColumn = { link = 'CursorColumn' }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     Directory = { fg = c.blue }, -- directory names (and other special names in listings)
     DiffAdd = { fg = c.diff.add_fg, bg = c.diff.add }, -- diff mode: Added line |diff.txt|
@@ -68,7 +68,7 @@ M.setup = function()
     SpellCap = { sp = c.warning, style = Styles.Undercurl }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     SpellLocal = { sp = c.info, style = Styles.Undercurl }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     SpellRare = { sp = c.hint, style = Styles.Undercurl }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
-    StatusLine = { fg = c.bg, bg = c.blue }, -- status line of current window
+    StatusLine = { fg = c.bg, bg = "#edeff1" }, -- status line of current window
     StatusLineNC = { fg = util.darken(c.fg, 0.5), bg = c.bg }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine = { fg = c.fg, bg = c.bg }, -- tab pages line, not active tab page label
     TabLineFill = { bg = c.bg2 }, -- tab pages line, where there are no labels
@@ -406,7 +406,7 @@ M.setup = function()
     TelescopeSelection = { bg = c.bg_visual_selection },
 
     -- NvimTree
-    NvimTreeNormal = { fg = c.fg_light, bg = c.bg_sidebar },
+    NvimTreeNormal = { fg = c.fg_light, bg = "#ffffff" },
     NvimTreeEndOfBuffer = { fg = c.sidebar_eob },
     NvimTreeRootFolder = { fg = c.fg_light, style = Styles.Bold },
     NvimTreeGitDirty = { fg = c.git.change },
