@@ -71,7 +71,7 @@ M.setup = function()
     StatusLine = { fg = c.bg, bg = "#edeff1" }, -- status line of current window
     StatusLineNC = { fg = util.darken(c.fg, 0.5), bg = c.bg }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine = { fg = c.fg, bg = "#edeff1" }, -- tab pages line, not active tab page label
-    TabLineFill = { bg = c.bg2 }, -- tab pages line, where there are no labels
+    TabLineFill = { bg = "#edeff1" }, -- tab pages line, where there are no labels
     TabLineSel = { link = 'PmenuSel' }, -- tab pages line, active tab page label
     Title = { fg = c.syntax.variable, style = Styles.Bold }, -- titles for output from ":set all", ":autocmd" etc.
     Visual = { bg = c.bg_visual_selection }, -- Visual mode selection
