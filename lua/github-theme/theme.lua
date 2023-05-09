@@ -70,7 +70,7 @@ M.setup = function()
     SpellRare = { sp = c.hint, style = Styles.Undercurl }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
     StatusLine = { fg = c.bg, bg = "#edeff1" }, -- status line of current window
     StatusLineNC = { fg = util.darken(c.fg, 0.5), bg = c.bg }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
-    TabLine = { fg = c.fg, bg = c.bg }, -- tab pages line, not active tab page label
+    TabLine = { fg = c.fg, bg = "#edeff1" }, -- tab pages line, not active tab page label
     TabLineFill = { bg = c.bg2 }, -- tab pages line, where there are no labels
     TabLineSel = { link = 'PmenuSel' }, -- tab pages line, active tab page label
     Title = { fg = c.syntax.variable, style = Styles.Bold }, -- titles for output from ":set all", ":autocmd" etc.
