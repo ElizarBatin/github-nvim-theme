@@ -36,7 +36,8 @@ M.setup = function()
     -- TermCursor  = { }, -- cursor in a focused terminal
     -- TermCursorNC= { }, -- cursor in an unfocused terminal
     ErrorMsg = { fg = c.error }, -- error messages on the command line
-    VertSplit = { fg = c.bg_visual, bg = config.options.transparent and c.none or c.bg }, -- the column separating vertically split windows
+    -- VertSplit = { fg = c.bg_visual, bg = config.options.transparent and c.none or c.bg }, -- the column separating vertically split windows
+    VertSplit = { fg = "#FFFFFF", bg = "NONE" },
     Folded = { fg = c.fg, bg = c.bg_visual_selection }, -- line used for closed folds
     FoldColumn = { link = 'Folded' }, -- 'foldcolumn'
     SignColumn = { fg = c.fg_gutter, bg = config.options.transparent and c.none or c.bg }, -- column where |signs| are displayed
@@ -406,7 +407,7 @@ M.setup = function()
     TelescopeSelection = { bg = c.bg_visual_selection },
 
     -- NvimTree
-    NvimTreeNormal = { fg = c.fg_light, bg = "#ffffff" },
+    NvimTreeNormal = { fg = c.fg_light, bg = "#F6F8FA" },
     NvimTreeEndOfBuffer = { fg = c.sidebar_eob },
     NvimTreeRootFolder = { fg = c.fg_light, style = Styles.Bold },
     NvimTreeGitDirty = { fg = c.git.change },
